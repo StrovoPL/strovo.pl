@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Dziękujemy | Strovo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f8ff;
+      --surface: #ffffff;
+      --text: #122238;
+      --muted: #42566f;
+      --line: #c8d8ee;
+      --brand: #1656a8;
+      --brand-strong: #114483;
+      --radius: 14px;
+      --shadow: 0 14px 34px rgba(20, 58, 108, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: "Manrope", sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top right, #e4efff 0, var(--bg) 45%), var(--bg);
+      padding: 1rem;
+    }
+
+    .thanks-card {
+      width: min(680px, 100%);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: clamp(1.4rem, 3vw, 2rem);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 0.9rem;
+      padding: 0.24rem 0.62rem;
+      border-radius: 999px;
+      background: #dbeaff;
+      color: #244f84;
+      font-size: 0.74rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 0.7rem;
+      font-family: "Merriweather", serif;
+      line-height: 1.25;
+      font-size: clamp(1.5rem, 3.8vw, 2.2rem);
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.25rem;
+      min-height: 44px;
+      padding: 0 1rem;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background: var(--brand);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background-color 200ms ease, transform 200ms ease;
+    }
+
+    .back-btn:hover,
+    .back-btn:focus-visible {
+      background: var(--brand-strong);
+      transform: translateY(-1px);
+    }
+
+    .small {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #5f7698;
+    }
+  </style>
+</head>
+<body>
+  <main class="thanks-card" role="main">
+    <span class="label">Wiadomość wysłana</span>
+    <h1>Dziękujemy za kontakt</h1>
+    <p>Twoje zapytanie zostało przyjęte. Odpowiemy najszybciej, jak to możliwe.</p>
+    <a class="back-btn" href="index.html">Powrót na stronę główną</a>
+    <span class="small">Strovo</span>
+  </main>
+</body>
+</html>
